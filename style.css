@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: "Passion One", serif;
+    --font3: "Sriracha", serif;
+}
+
+html, body {
+    background-color: rgb(18, 18, 18);
+    min-height: 100vh; 
+
+    font-family: var(--font1);
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+    text-align: center;
+
+}
+
+header > h1 {
+    padding-top: 50px;
+
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 8vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+    padding-top: 3px;
+}
+
+section {
+    padding-left: 35px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    line-height: 2em;
+    font-family: var(--font3);
+    font-size: 2.5vw;
+}
+
+section > p {
+    margin-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: rgb(0, 0, 0);
+
+}
+
+section.imagem {
+    background-color: rgb(45, 44, 44);
+    color: white;
+
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    box-shadow: inset 5px 5px 16px 0px rgba(0, 0, 0, 0.764);
+    text-shadow: 1px 1px 1px black;
+
+}
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.424);
+    display: inline-block;
+    padding: 10px;
+
+    border-radius: 10px;
+}
+
+section#fundo01 {
+    background-image: url("imagens/background001.jpg");
+}
+
+section#fundo02 {
+    background-image: url('imagens/background002.jpg');
+}
+
+.paragrafo1 {
+   padding-bottom: 4vh;
+}
+
+section > .paragrafo {
+    margin-bottom: 5px;
+}
+
+
+a {
+    text-decoration: none;
+
+    color: white;
+
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(177, 176, 176);
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 7px;
+
+    font-size: 0.6em;
+}
